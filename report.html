@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crime Investigation Agency | Report</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../FontAwesome/css/all.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom/style.css">
+
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light">Crime<b>+</b>Investigation</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="complaints.html" class="nav-link cool-link">Complaints</a></li>
+                    <li class="nav-item"><a href="report.html" class="nav-link cool-link active">File Report</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link cool-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="signIn.html" class="nav-link cool-link">Sign in <i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container shadow bg-light rounded my-3">
+        <div class="col-md-10 mx-auto py-3">
+            <h3 class="text-muted">Police Report Form</h3>
+            <p class="text-muted">If you have witnessed an incident that files under police attribution, please use this online police report form to signalize it. The police will review the report and take the appropriate action. Thank you for being a responsible citizen.</p>
+            <hr class="bg-dark">
+            
+            <!-- Form -->
+        <form class="mt-2">
+            <div class="form-row">
+
+                <div class="col-md-12 form-group">
+                    <label>Report Type</label>
+                        <div class="custom-control custom-checkbox ml-3">
+                            <input type="checkbox" class="custom-control-input" id="crimeReport">
+                            <label class="custom-control-label" for="crimeReport">Crime Report</label>
+                        </div>
+                        <div class="custom-control custom-checkbox ml-3">
+                            <input type="checkbox" class="custom-control-input" id="MissingReport">
+                            <label class="custom-control-label" for="MissingReport">Missing Report</label>
+                        </div>
+                </div>
+                
+                <div class="col-md-6 form-group">
+                    <label for="name">Name of the person reporting the incident</label>
+                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="date">Date when you witnessed the incident</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+
+                <div class="col-md-8 form-group">
+                    <label for="address">Location of the incident</label>
+                    <input type="text" class="form-control" id="address" placeholder="Street Address" required>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="city">City</label>
+                    <select class="form-control" id="city" placeholder="Select city" required>
+                        <option value="">Select city</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="peshawer">Peshawer</option>
+                        <option value="quetta">Quetta</option>
+                        <option value="lahore">Lahore</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-6 form-group">
+                    <label for="cnic">CNIC number</label>
+                    <input type="text" class="form-control" id="cnic" placeholder="14 digit CNIC number" required>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="contact">Contact number</label>
+                    <input type="text" class="form-control" id="contact" placeholder="Contact Number" required>
+                </div>
+                
+                <div class="custom-file col-md-5 mb-3">
+                    <label for="reporter-img" class="custom-file-label">Reporter image</label>
+                    <input type="file" class="custom-file-input" id="reporter-img">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="custom-file col-md-5 mb-3">
+                    <label for="suspect-img" class="custom-file-label">Suspect image</label>
+                    <input type="file" class="custom-file-input" id="suspect-img">
+                </div>
+                
+                <div class="col-md-4 form-group">
+                    <label for="involved">How many people were involved?</label>
+                    <input type="number" class="form-control" id="involved">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-7 form-group">
+                        <p>Were you in any way affected by the incident?</p>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="radio-yes" name="involvedInCrime" class="custom-control-input">
+                        <label class="custom-control-label" for="radio-yes">Yes</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="radio-no" name="involvedInCrime" class="custom-control-input">
+                        <label class="custom-control-label" for="radio-no">No</label>
+                    </div>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="description">Please describe the incident</label>
+                    <textarea class="form-control" id="description" rows="3" required></textarea>
+                </div>
+            </div>
+            <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#successAlert">Submit Report</button>
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#successAlert">Launch demo modal</button> -->
+        </form>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="successAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <span aria-hidden="true" class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+        </div>
+        <div class="modal-body p-0">
+            <div class="check_mark">
+                <div class="sa-icon sa-success animate">
+                    <span class="sa-line sa-tip animateSuccessTip"></span>
+                    <span class="sa-line sa-long animateSuccessLong"></span>
+                    <div class="sa-placeholder"></div>
+                    <div class="sa-fix"></div>
+                </div>
+            </div>
+            <p class="lead text-center">Report submited successfully</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Start -->
+    <hr style="width:90%;" class="bg-dark">
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Contact Us</h3>
+                    <p class="lead"><i class="fa fa-location-arrow"></i> I.I Chandigar Road, Karachi</p>
+                    <p class="lead"><i class="fa fa-envelope"></i> raj.tahseen@gmail.com</p>
+                    <p class="lead"><i class="fa fa-address-book"></i> +92 3148601946</p>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Social Media</h3>
+                    <ul class="social-network">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Our Partners</h3>
+                    <div class="row">
+                        <img src="img/fia.png" class="fia img-fluid m-2">
+                        <img src="img/ssu.jpg" class="ssu img-fluid m-3">
+                        <img src="img/rangers.jpg" class="rangers img-fluid m-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark">
+        <div class="container text-light text-center py-2">
+            <span class="footer-last">&copy; Crime Investigation Agency 2022</span>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap Java Script -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

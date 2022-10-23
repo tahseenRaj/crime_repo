@@ -1,0 +1,152 @@
+body{
+    padding-top: 80px;
+}
+
+/* Btn outline */
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus, .navbar-toggler:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    background-image: none  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow: 0 1px 10px #383838;
+    background: linear-gradient(135deg, #474b50, #3e516b);
+    /* background: transparent; */
+}
+.navbar-brand{
+    font-family: 'Fredoka One', cursive;
+}
+b{
+    font-weight: normal;
+}
+.cool-link{
+    color: white !important;
+}
+.cool-link:hover{
+    color: #f5bb50 !important;
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f5bb50;
+    transition: width 0.3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+.cool-link-active{
+    color: #f5bb50 !important;
+}
+
+.bg-categories{
+    background: linear-gradient(135deg, #474b50, #3e516b);
+    color: black;
+}
+
+/* Card */
+.card-img-top{
+    height: 250px;
+}
+.card-title{
+    font-size: 16px;
+}
+/* #crimeReports .card-body{
+    height: 200px;    
+} */
+.card-body{
+    height: 170px;
+    /* overflow-y: scroll; */
+}
+/* Card button Start */
+.btn-sm{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+/* Card button End */
+
+/* footer Social */
+.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.icoFacebook {
+    border: 1px solid #3B5998;
+	color:#3B5998;
+}
+.social-network a.icoTwitter {
+    border: 1px solid #33ccff;
+	color:#33ccff;
+}
+.social-network a.icoGoogle {
+    border: 1px solid #BD3518;
+	color:#BD3518;
+}
+.social-network li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-network i {
+    margin:0;
+	line-height:50px;
+	text-align: center;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* Hover */
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+    color:#fff;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+    color:#fff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+    color:#fff;
+}
+/* Footer Images */
+.fia{
+    width: 250px;
+    height: 80px;
+}
+.ssu, .rangers{
+    width: 140px;
+    height: 140px;
+}
+@media only screen and (max-width: 400px) {
+    .ssu, .rangers{
+        width: 120px;
+        height: 120px;
+    }
+  }
+
+.footer-last{
+    font-size: 14px;
+}

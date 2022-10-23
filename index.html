@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crime Investigation Agency</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../FontAwesome/css/all.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light">Crime<b>+</b>Investigation</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="complains.html" class="nav-link cool-link">Complaints</a></li>
+                    <li class="nav-item"><a href="report.html" class="nav-link cool-link">File Report</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link cool-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link cool-link">Sign in <i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <header class="header-img bg-dark">
+        <div class="container py-5 ">
+            <img src="img/image.png" class="img-fluid mx-auto d-block">
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section Start -->
+    <section class="bg-light">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4 py-3">
+                    <h4 class="text-dark">Complaints</h4>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quod neque aliquid
+                        tenetur dolorem itaque.</p>
+                    <a href="complains.html" class="btn btn-outline-secondary" role="button">View Complaints</a>
+                </div>
+                <div class="col-md-4 py-3">
+                    <h4 class="text-dark">Report Crime</h4>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quod neque aliquid
+                        tenetur dolorem itaque.</p>
+                    <a href="javascript:void(0)" class="btn btn-outline-secondary" role="button">File Missing Reports</a>
+                </div>
+                <div class="col-md-4 py-3">
+                    <h4 class="text-dark">Report Missing</h4>
+                    <p class="lead text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quod neque aliquid
+                        tenetur dolorem itaque.</p>
+                    <a href="javascript:void(0)" class="btn btn-outline-secondary" role="button">File Missing Reports</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section End -->
+
+    <!-- Image Slider Start -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner section1">
+                <div class="carousel-item active" data-interval="3000">
+                    <img src="img/carousel1.jpeg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="img/carousel2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="img/carousel3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="img/carousel4.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Image Slider End -->
+
+    <!-- Counter Section Start -->
+    <section class="bg-light">
+        <div class="container pt-5 ">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Total Registerd Complains</h3>
+                    <div id="counter">
+                        <span class="pt-3 display-3 counter-value text-secondary" data-count="364">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center py-3">
+                    <h4>Complaints Solved</h4>
+                    <div id="counter">
+                        <span class="pt-3 custom-count counter-value text-secondary" data-count="285">0</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center py-3">
+                    <h4>Under Investigation</h4>
+                    <div id="counter">
+                        <span class="pt-3 custom-count counter-value text-secondary" data-count="8">0</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center py-3">
+                    <h4>Pending Complains</h4>
+                    <div id="counter">
+                        <span class="pt-3 custom-count counter-value text-secondary" data-count="71">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Wanted Section Start -->
+    <section class="container-fluid">
+        <h1 class="text-center display-4 my-5">MOST WANTED CRIMINALS</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow h-100">
+                    <img class="card-img-top" src="img/criminal.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Criminal Name</h4>
+                        <h5>Last seen: Chicago</h5>
+                        <h6 class="card-text">Age: 00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow h-100">
+                    <img class="card-img-top" src="img/criminal.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Criminal Name</h4>
+                        <h5>Last seen: Chicago</h5>
+                        <h6 class="card-text">Age: 00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow h-100">
+                    <img class="card-img-top" src="img/criminal.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Criminal Name</h4>
+                        <h5>Last seen: Chicago</h5>
+                        <h6 class="card-text">Age: 00</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card shadow h-100">
+                    <img class="card-img-top" src="img/criminal.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Criminal Name</h4>
+                        <h5>Last seen: Chicago</h5>
+                        <h6 class="card-text">Age: 00</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Wanted Section End -->
+
+    <!-- Footer Start -->
+    <hr style="width:90%;" class="bg-dark">
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Contact Us</h3>
+                    <p class="lead"><i class="fa fa-location-arrow"></i> I.I Chandigar Road, Karachi</p>
+                    <p class="lead"><i class="fa fa-envelope"></i> raj.tahseen@gmail.com</p>
+                    <p class="lead"><i class="fa fa-address-book"></i> +92 3148601946</p>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Social Media</h3>
+                    <ul class="social-network">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h3 class="pb-2">Our Partners</h3>
+                    <div class="row">
+                        <img src="img/fia.png" class="fia img-fluid m-2">
+                        <img src="img/ssu.jpg" class="ssu img-fluid m-3">
+                        <img src="img/rangers.jpg" class="rangers img-fluid m-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark">
+        <div class="container text-light text-center py-2">
+            <span class="footer-last">&copy; Crime Investigation Agency 2022</span>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+    <!-- Bootstrap Java Script -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="custom/number-animation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: digitalFont;
+    src: url(font/digital.ttf);
+  }
+
+.navbar{
+    box-shadow: 0 1px 10px #383838;
+    background: linear-gradient(135deg, #474b50, #3e516b);
+    /* background: transparent; */
+}
+.navbar-brand{
+    font-family: 'Fredoka One', cursive;
+}
+b{
+    font-weight: normal;
+}
+.cool-link{
+    color: white !important;
+}
+.cool-link:hover{
+    color: #f5bb50 !important;
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f5bb50;
+    transition: width 0.3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.header-img{
+    padding-top: 56px;
+    /* background-size: cover; */
+    background: linear-gradient(135deg, #343A40, #3e516b);
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus, .navbar-toggler:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    background-image: none  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+}
+
+
+.section1{
+height: 100%;
+}
+/* Counter */
+.custom-count{
+    font-size: 50px !important;
+}
+
+#counter span{
+    font-family: digitalFont !important;
+}
+/* Card */
+.card-img-top{
+    height: 350px;
+}
+
+
+/* footer Social */
+.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+/* footer social icons */
+.social-network a.icoFacebook {
+    border: 1px solid #3B5998;
+	color:#3B5998;
+}
+.social-network a.icoTwitter {
+    border: 1px solid #33ccff;
+	color:#33ccff;
+}
+.social-network a.icoGoogle {
+    border: 1px solid #BD3518;
+	color:#BD3518;
+}
+.social-network li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-network i {
+    margin:0;
+	line-height:50px;
+	text-align: center;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/* Hover */
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+    color:#fff;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+    color:#fff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+    color:#fff;
+}
+/* Footer Images */
+.fia{
+    width: 250px;
+    height: 80px;
+}
+.ssu, .rangers{
+    width: 140px;
+    height: 140px;
+}
+@media only screen and (max-width: 400px) {
+    .ssu, .rangers{
+        width: 120px;
+        height: 120px;
+    }
+  }
+
+.footer-last{
+    font-size: 14px;
+}
