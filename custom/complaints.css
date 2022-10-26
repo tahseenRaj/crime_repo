@@ -41,7 +41,7 @@ b{
     width: 100%;
     transition: width 0.3s;
 }
-.cool-link-active{
+.active{
     color: #f5bb50 !important;
 }
 
@@ -52,11 +52,11 @@ b{
 
 /* Card */
 .card-img-top{
-    height: 250px;
+    height: 300px;
 }
-.card-title{
+/* .card-title{
     font-size: 16px;
-}
+} */
 /* #crimeReports .card-body{
     height: 200px;    
 } */
@@ -140,7 +140,7 @@ b{
     width: 140px;
     height: 140px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1200px) {
     .ssu, .rangers{
         width: 120px;
         height: 120px;

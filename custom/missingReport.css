@@ -1,0 +1,49 @@
+
+
+body{
+    margin-top: 68px;
+}
+
+.navbar{
+    box-shadow: 0 1px 10px #383838;
+    background: linear-gradient(135deg, #474b50, #3e516b);
+    /* background: transparent; */
+}
+.navbar-brand{
+    font-family: 'Fredoka One', cursive;
+}
+b{
+    font-weight: normal;
+}
+.cool-link{
+    color: white !important;
+}
+.cool-link:hover{
+    color: #f5bb50 !important;
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f5bb50;
+    transition: width 0.3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus, .navbar-toggler:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    background-image: none  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+}
+
+.crime-img{
+    min-height: 300px;
+    max-height: 400px;
+    width: fit-content;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crime Investigation Agency | Report Detail</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../FontAwesome/css/all.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom/crimeReport.css">
+</head>
+<body>
+    
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">Crime<b>+</b>Investigation</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="complaints.html" class="nav-link cool-link">Complaints</a></li>
+                    <li class="nav-item"><a href="report.html" class="nav-link cool-link">File Report</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link cool-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="signIn.html" class="nav-link cool-link">Sign in <i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-8 p-3">
+                <h4 class="text-danger text-center">Crime Report</h4>
+                <h5 class="text-primary">Status: <span id="reportStatus">Under Investigation</span></h5>
+                <h5>Name of the person reporting the incident: <span id="name">Not mentioned</span></h5>
+                <h5>Date of the incident: <span id="date">00-00-0000</span></h5>
+                <h5>Location of the incident: <span id="location">Street Address</span></h5>
+                <h5>City: <span id="date">Karachi</span></h5>
+                <h5>Reporter Statement:</h5>
+                <p id="statement" class="pl-3 text-secondary lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt magnam accusamus dolorem illo dignissimos nobis ipsum, voluptatem iusto fugit, veniam optio, repellendus nisi. Officiis, ad eum magni quod culpa nobis?</p>
+            </div>
+            <div class="col-md-6 col-lg-4 p-0">
+                <img src="img/carousel2.jpg" class="img-fluid crime-img">
+            </div>
+        </div>
+    
+    </div>
+
+    
+
+    <!-- Bootstrap Java Script -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

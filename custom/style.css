@@ -2,7 +2,7 @@
 @font-face {
     font-family: digitalFont;
     src: url(font/digital.ttf);
-  }
+}
 
 .navbar{
     box-shadow: 0 1px 10px #383838;
@@ -62,7 +62,7 @@ height: 100%;
 }
 /* Card */
 .card-img-top{
-    height: 350px;
+    height: 300px;
 }
 
 
@@ -134,13 +134,12 @@ height: 100%;
     width: 140px;
     height: 140px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1200px) {
     .ssu, .rangers{
         width: 120px;
         height: 120px;
     }
   }
-
 .footer-last{
     font-size: 14px;
 }
